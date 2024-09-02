@@ -8,6 +8,7 @@ $(document).ready(function() {
     pagerType: 'short',
     controls: false,
     mode: 'vertical',
+    speed: 1000,
     adaptiveHeight: true
   });
 

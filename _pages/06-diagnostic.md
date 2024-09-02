@@ -13,9 +13,15 @@ permalink: diagnostic
       
       <p>Choose the level that best fits your experience.</p>
 
-      <p>This data is not stored on our systems.</p>
-  
-<div class="assessmentSlider" id="assessmentSlider">
+      
+<div class="row">
+<div class="col-md-4">
+            <p><strong>Beginner</strong> = I have never done this</p>
+            <p><strong>Novice</strong> = I have done this once or twice</p>
+            <p><strong>Experienced</strong> = I have done this many times in different environments</p>
+            <p><strong>Expert</strong> = I am often called upon to support other people to do this</p>
+            </div>
+<div class="assessmentSlider col-md-8" id="assessmentSlider">
 
     {% for c in skills %}
       {% for item in c.items %}
@@ -25,35 +31,37 @@ permalink: diagnostic
         <script>skillGroups.push(["{{ c.title }}","{{ c.ID }}_{{ item.ID }}",0]);</script>
           <div class="col-md-12">
             <!--<h4>{{ c.title }}</h4>-->
+            <a class="info-button" href="#" data-featherlight="#infobox-{{ item.ID | slugify }}"><img src="/assets/images/info.svg" alt="Info icon"></a>
+            <div class="hide"><div id="infobox-{{ item.ID | slugify }}"><h4>{{ item.name }}</h4><p>{{ item.info }}</p></div></div>
             <h4>{{ item.name }}</h4>
-            <label for="{{ item.ID }}">Unset</label>
+            
             <input type="radio" id="{{ c.ID }}_{{ item.ID }}_0" name="{{ c.ID }}_{{ item.ID }}" value="0" checked="checked">
+            <label for="{{ item.ID }}">Not relevant</label>
           </div>
           <div class="col-md-6">
             <div>
-              <label>Beginner</label>
+              
               <input type="radio" id="{{ c.ID }}_{{ item.ID }}_1" name="{{ c.ID }}_{{ item.ID }}" value="1">
+              <label>Beginner</label>
             </div>
          
             <div>
-              <label>Novice</label>
+              
               <input type="radio" id="{{ c.ID }}_{{ item.ID }}_2" name="{{ c.ID }}_{{ item.ID }}" value="2">
+              <label>Novice</label>
             </div>
             <div>
-              <label>Experienced</label>
+              
               <input type="radio" id="{{ c.ID }}_{{ item.ID }}_3" name="{{ c.ID }}_{{ item.ID }}" value="3">
+              <label>Experienced</label>
             </div>
             <div>
-            <label>Expert</label>
+            
             <input type="radio" id="{{ c.ID }}_{{ item.ID }}_3" name="{{ c.ID }}_{{ item.ID }}" value="3">
+            <label>Expert</label>
             </div>
           </div>
-          <div class="col-md-6">
-            <p><strong>Beginner</strong> = I have never done this</p>
-            <p><strong>Novice</strong> = I have done this once or twice</p>
-            <p><strong>Experienced</strong> = I have done this many times in different environments</p>
-            <p><strong>Expert</strong> = I am often called upon to support other people to do this</p>
-            </div>
+          
         </div>
 
         {% endfor %}
@@ -62,6 +70,8 @@ permalink: diagnostic
 
 <!--<div class="text-center"><button type="submit" class="btn btn-primary">Produce assessment graph</button></div>-->
 </div> <!-- end of slider -->
+
+</div><!-- end of row -->
 <!-- Button trigger modal -->
 <div class="text-center">
 <button id="start" type="submit" class="btn btn-secondary">Return to start</button>
@@ -72,8 +82,8 @@ permalink: diagnostic
 </button>
 </div>
 
-
-
+<p>&nbsp;</p>
+<p class="text-center">Please note, this data is not stored on our systems.</p>
 
 
 
