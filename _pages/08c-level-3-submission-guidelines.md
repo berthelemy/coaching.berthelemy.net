@@ -7,7 +7,7 @@ The {{ site.levels.level3.ID }} {{ site.levels.level3.name }} certificate is bas
 
 Your complete portfolio should contain:
 
-1. A mapping document (you can use this <a href="{{ site.baseurl }}/elearning-competencies.csv">csv file</a> as a guide) which indicates which evidence you are using for each competency descriptor
+1. A mapping document (you can use this <a href="{{ site.baseurl }}/skills.csv">csv file</a> as a guide) which indicates which evidence you are using for each skill descriptor
 2. Your evidence (see below).
 3. A short statement for each piece of evidence, where you reflect on how it demonstrates competence, and what you would do differently next time
 
@@ -46,7 +46,7 @@ Your portfolio will be evaluated by two assessors.
 
 They will be looking for:
 
-- Evidence of competency
+- Evidence of skill
 - Evidence that you are reflecting on your own practice
 
 You will either receive a **pass** or a **referral**.

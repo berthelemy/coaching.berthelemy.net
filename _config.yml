@@ -13,11 +13,11 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Wyver Academy
-organisation: Wyver Solutions Ltd
+title: Mark Berthelemy - coaching
+organisation: Mark Berthelemy
 orgurl: https://www.wyversolutions.co.uk
-frameworkurl: https://digitallearningcompetencies.info
-email: mberthelemy@wyversolutions.co.uk
+
+email: mark@berthelemy.net
 description: Learn to become a learning technology consultant
 baseurl: "" # the subpath of your site, e.g. /blog
 #url: "https://wyversolutions.co.uk" # the base hostname & protocol for your site, e.g. http://example.com
@@ -31,7 +31,7 @@ theme:
 #  - jekyll-feed
 
 collections:
-    elearning-competencies:
+    skills:
         output: true
     challenges:
         output: true
@@ -39,10 +39,10 @@ collections:
 defaults:
   - scope:
       path: ""
-      type: "elearning-competencies"
+      type: "skills"
     values:
-      layout: "competency"
-      permalink: /competencies/:title
+      layout: "skill"
+      permalink: /skills/:title
   - scope:
       path: ""
       type: "challenges"

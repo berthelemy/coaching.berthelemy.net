@@ -1,4 +1,4 @@
-What competencies do you need from a Learning Technology Consultant?
+What skills do you need from a Learning Technology Consultant?
 
 Here's my starter for ten...
 

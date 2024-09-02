@@ -39,7 +39,7 @@ $("button#start").on('click', function() {
 });
 
 
-  $('#competencies').DataTable({
+  $('#skills').DataTable({
     "paging": false,
     "ordering": false,
     "info": false,
@@ -108,10 +108,10 @@ $("button#start").on('click', function() {
 
       // console.log(compID);
 
-      compGroups.push(compID); // Create an array of all the competency groups by adding each one in turn
+      compGroups.push(compID); // Create an array of all the skill groups by adding each one in turn
     });
 
-    compGroupsUnique = [...new Set(compGroups)]; // Create list of unique competency groups
+    compGroupsUnique = [...new Set(compGroups)]; // Create list of unique skill groups
 
     //console.log(compGroupsUnique);
     var compGroupScores = []; // Create an array to hold the unique names and their scores
@@ -140,10 +140,10 @@ $("button#start").on('click', function() {
       compItemID = field.name;
       compItemScore = field.value;
 
-      $(compGroupScores).each(function(j, scoreItem) { // go through the unique competency groups
+      $(compGroupScores).each(function(j, scoreItem) { // go through the unique skill groups
         // console.log(scoreItem.group, scoreItem.score);
         //console.log(compItemID,compItemScore);
-        var compID = compItemID.substr(0, compItemID.indexOf('_')); // get ready to make a comparison with the unique competency groups
+        var compID = compItemID.substr(0, compItemID.indexOf('_')); // get ready to make a comparison with the unique skill groups
 
         if (compID == scoreItem.group) { // check to see if we can add to the list of unique groups
 
@@ -196,7 +196,7 @@ function radar(labels, scores) {
     options: {
       title: {
         display: true,
-        text: 'Competency summary chart'
+        text: 'Skill summary chart'
       },
       animation: {
         onComplete: function(animation) {

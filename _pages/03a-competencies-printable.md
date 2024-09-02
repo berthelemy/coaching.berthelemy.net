@@ -1,12 +1,12 @@
 ---
-title: eLearning competency framework
-layout: competencies
-permalink: elearning-competencies/print
+title: Skill framework
+layout: skills
+permalink: skills/print
 ---
-The Wyver Academy competency framework is designed to produce well-rounded digital specialists.
+The skill framework is designed to produce well-rounded digital specialists.
 
-{% include competencies-list.html %}
+{% include skills-list.html %}
 
 <div class="text-center" >
-<a href="{{ site.baseurl }}/assessment"><button type="button" class="btn btn-primary">Assess yourself against the competency framework</button></a>
+<a href="{{ site.baseurl }}/assessment"><button type="button" class="btn btn-primary">Assess yourself against the skill framework</button></a>
 </div>

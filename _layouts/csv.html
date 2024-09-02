@@ -1,6 +1,6 @@
 "category","sub-category","{{ site.levels.level3.ID }} descriptor","Portfolio evidence"
-{%- assign competencies = site.elearning-competencies | sort: "category" -%}
-{%- for c in competencies -%}
+{%- assign skills = site.skills | sort: "category" -%}
+{%- for c in skills -%}
 {%- assign title = c.title -%}
   {% for item in c.items %}
 "{{ title }}","{{ item.name }}","{{ item.L3 }}",""

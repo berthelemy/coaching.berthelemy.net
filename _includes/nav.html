@@ -16,14 +16,14 @@
       </li>
       <!--<li class="nav-item dropdown active">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Competencies
+          Skills
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 
-          <a class="dropdown-item" href="{{ site.baseurl }}/elearning-competencies">View all competency areas</a>
+          <a class="dropdown-item" href="{{ site.baseurl }}/skills">View all skill areas</a>
           <div class="dropdown-divider"></div>
-          {% assign competencies = site.elearning-competencies | sort: "category" %}
-          {% for c in competencies %}
+          {% assign skills = site.skills | sort: "category" %}
+          {% for c in skills %}
           <a class="dropdown-item" href="{{ site.baseurl }}{{ c.url}}">{{ c.title }}</a>
           {% endfor %}
 

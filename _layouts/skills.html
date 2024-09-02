@@ -3,11 +3,8 @@ layout: default
 ---
 <p>{{ page.description }}</p>
 
-<p><a href="https://github.com/Wyver-Solutions/_elearning-competencies" target="_blank">View on Github</a> (opens in a new tab)</p>
-
-
-{% assign competencies = site.elearning-competencies | sort: "category" %}
-{% for c in competencies %}
+{% assign skills = site.skills | sort: "category" %}
+{% for c in skills %}
 <div class="row">
   <div class="col-12">
   <h2>{{ c.title }}</h2>

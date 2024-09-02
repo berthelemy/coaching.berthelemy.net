@@ -15,14 +15,14 @@ permalink: coaching
       <p>Should you wish to proceed, we will provide you with a personalised 10 week programme of challenges. This can adapt as we proceed. During this period we will schedule up to five hour-long review meetings between you and your coach.</p>
       <!--<h2>Annual membership</h2>
       <p>Our annual membership fee gives you access to our community of practice and unlimited email-based assistance, as well as custom content that is created just for members.</p>
-      <p>These fees also enable us to continue providing open access to our growing bank of challenges, and to maintain the competency framework.</p>-->
+      <p>These fees also enable us to continue providing open access to our growing bank of challenges, and to maintain the skill framework.</p>-->
       <p><a type="button" class="btn btn-primary" href="{{ site.baseurl }}/contact">Contact us for more information</a></p>
     </div>
 
         <div class="col-lg-4">
             <figure class="figure">
                 <img class="img-fluid" src="{{ '/assets/images/framework.png' | relative_url }}" alt="circle with framework components" />
-                <figcaption class="figure-caption text-center">Competency framework components</figcaption>
+                <figcaption class="figure-caption text-center">Skill framework components</figcaption>
             </figure>
         </div>
     </div>

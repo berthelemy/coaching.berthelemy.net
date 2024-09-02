@@ -7,5 +7,5 @@
 
 ## done
 
-- Move competencies to own repo and incorporate as a sub-module - DONE
+
 - Make the canvas spidergram appear in a lightbox - DONE

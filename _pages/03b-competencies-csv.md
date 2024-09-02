@@ -1,8 +1,8 @@
 ---
-title: eLearning competency framework
+title: skill framework
 layout: csv
-permalink: elearning-competencies.csv
+permalink: skills.csv
 ---
 
 
-{% include competencies-list.html %}
+{% include skills-list.html %}

@@ -3,8 +3,8 @@ layout: default
 title: Self-assessment
 permalink: assessment
 ---
-{% assign competencies = site.elearning-competencies | sort: "category" %}
-<script>var competencyGroups = [];</script>
+{% assign skills = site.skills | sort: "category" %}
+<script>var skillGroups = [];</script>
 
 <div class="row mt-5">
       <div class="col-12">
@@ -14,7 +14,7 @@ permalink: assessment
     <!-- Setup tabs
     <ul class="nav" id="Tabs" role="tablist">
 
-    {% for c in competencies %}
+    {% for c in skills %}
         <li role="presentation">
         <a class="nav-link" id="{{ c.ID }}-tab" href="#{{ c.ID }}-pane" role="tab" aria-controls="{{ c.ID }}" aria-selected="true">{{ c.title }}</a>
       </li>
@@ -24,12 +24,12 @@ permalink: assessment
 
 
 
-    {% for c in competencies %}
+    {% for c in skills %}
       {% for item in c.items %}
 
 
         <div class="row">
-        <script>competencyGroups.push(["{{ c.title }}","{{ c.ID }}_{{ item.ID }}",0]);</script>
+        <script>skillGroups.push(["{{ c.title }}","{{ c.ID }}_{{ item.ID }}",0]);</script>
           <div class="col-md-3">
             <h4>{{ c.title }}</h4>
             <p><strong>{{ item.name }}</strong></p>
@@ -92,7 +92,7 @@ permalink: assessment
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <a type="button" id="downloadChart" class="btn btn-primary" download="competency-assessment">Download summary</a>
+        <a type="button" id="downloadChart" class="btn btn-primary" download="skill-assessment">Download summary</a>
       </div>
     </div>
   </div>

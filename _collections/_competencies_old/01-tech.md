@@ -1,5 +1,5 @@
 ---
-layout: competency
+layout: skill
 title: Technology
 ID: Tech
 description: As a learning technology specialist, you'll need a good grasp of the technologies that underpin websites, mobile apps, communication tools and the connections between them.

@@ -1,5 +1,5 @@
 ---
-layout: competency
+layout: skill
 title: Commercial
 ID: Commercial
 description: You will probably need to contribute to sales or funding proposals, manage procurement of new technology and work with suppliers. 

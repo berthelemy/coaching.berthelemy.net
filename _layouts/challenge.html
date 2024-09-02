@@ -14,13 +14,13 @@ layout: default
     {% endif %}
 </div>
 
-<h2>Competencies covered</h2>
+<h2>Skills covered</h2>
 
 <ul>
-{% for c in page.competencies %}
+{% for c in page.skills %}
 
-    {% assign competencies = site.competencies %}
-        {% for sc in competencies %}
+    {% assign skills = site.skills %}
+        {% for sc in skills %}
             {% for i in sc.items %}
                 {% assign compID = c | slice: 0,4 %}
                 {% if i.ID == compID %}
