@@ -1,28 +1,21 @@
 ---
 layout: default
-title: Self-assessment
-permalink: assessment
+title: Diagnostic
+permalink: diagnostic
 ---
-{% assign skills = site.skills | sort: "category" %}
+{% assign skills = site.skills %}
+
+
 <script>var skillGroups = [];</script>
 
 <div class="row mt-5">
       <div class="col-12">
+      
+      <p>Choose the level that best fits your experience.</p>
+
       <p>This data is not stored on our systems.</p>
-
+  
 <div class="assessmentSlider" id="assessmentSlider">
-    <!-- Setup tabs
-    <ul class="nav" id="Tabs" role="tablist">
-
-    {% for c in skills %}
-        <li role="presentation">
-        <a class="nav-link" id="{{ c.ID }}-tab" href="#{{ c.ID }}-pane" role="tab" aria-controls="{{ c.ID }}" aria-selected="true">{{ c.title }}</a>
-      </li>
-    {% endfor %}
-</ul>
--->
-
-
 
     {% for c in skills %}
       {% for item in c.items %}
@@ -30,27 +23,37 @@ permalink: assessment
 
         <div class="row">
         <script>skillGroups.push(["{{ c.title }}","{{ c.ID }}_{{ item.ID }}",0]);</script>
-          <div class="col-md-3">
-            <h4>{{ c.title }}</h4>
-            <p><strong>{{ item.name }}</strong></p>
+          <div class="col-md-12">
+            <!--<h4>{{ c.title }}</h4>-->
+            <h4>{{ item.name }}</h4>
             <label for="{{ item.ID }}">Unset</label>
             <input type="radio" id="{{ c.ID }}_{{ item.ID }}_0" name="{{ c.ID }}_{{ item.ID }}" value="0" checked="checked">
           </div>
-          <div class="col-md-3">
-            <h4>Level 1</h4>
-            <input type="radio" id="{{ c.ID }}_{{ item.ID }}_1" name="{{ c.ID }}_{{ item.ID }}" value="1">
-            <p>{{ item.L1 }}</p>
-          </div>
-          <div class="col-md-3">
-            <h4>Level 2</h4>
-            <input type="radio" id="{{ c.ID }}_{{ item.ID }}_2" name="{{ c.ID }}_{{ item.ID }}" value="2">
-            <p>{{ item.L2 }}</p>
-          </div>
-          <div class="col-md-3">
-            <h4>Level 3</h4>
+          <div class="col-md-6">
+            <div>
+              <label>Beginner</label>
+              <input type="radio" id="{{ c.ID }}_{{ item.ID }}_1" name="{{ c.ID }}_{{ item.ID }}" value="1">
+            </div>
+         
+            <div>
+              <label>Novice</label>
+              <input type="radio" id="{{ c.ID }}_{{ item.ID }}_2" name="{{ c.ID }}_{{ item.ID }}" value="2">
+            </div>
+            <div>
+              <label>Experienced</label>
+              <input type="radio" id="{{ c.ID }}_{{ item.ID }}_3" name="{{ c.ID }}_{{ item.ID }}" value="3">
+            </div>
+            <div>
+            <label>Expert</label>
             <input type="radio" id="{{ c.ID }}_{{ item.ID }}_3" name="{{ c.ID }}_{{ item.ID }}" value="3">
-            <p>{{ item.L3 }}</p>
+            </div>
           </div>
+          <div class="col-md-6">
+            <p><strong>Beginner</strong> = I have never done this</p>
+            <p><strong>Novice</strong> = I have done this once or twice</p>
+            <p><strong>Experienced</strong> = I have done this many times in different environments</p>
+            <p><strong>Expert</strong> = I am often called upon to support other people to do this</p>
+            </div>
         </div>
 
         {% endfor %}
