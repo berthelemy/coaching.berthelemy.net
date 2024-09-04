@@ -5,26 +5,22 @@ ID: Projects
 description: You are likely to be the person asked to design a solution that will meet your customer's needs - based on a strong theoretical and practical background.
 items:
 - ID: B.26
-  name: Managed project resources
-  info: Consultants oversee the allocation and utilization of human, financial, and material resources throughout a project's lifecycle. They create resource plans, monitor usage, and make adjustments to ensure optimal efficiency. This involves balancing competing demands, prioritizing tasks, and maximizing resource effectiveness to meet project goals.
+  name: Manage project resources
+  info: <p>Consultants often oversee the allocation and utilisation of human, financial, and material resources throughout a project's lifecycle.</p><p>They create resource plans, monitor usage, and make adjustments to ensure optimal efficiency. </p><p>This involves balancing competing demands, prioritising tasks, and maximising resource effectiveness to meet project goals.</p>
 
 - ID: B.27
-  name: Coordinated with vendors
-  info: Consultants manage relationships with external suppliers and service providers. They negotiate contracts, establish clear expectations, and oversee vendor performance. This coordination ensures that outsourced components of a project are delivered on time, within budget, and to the required quality standards.
+  name: Coordinate with vendors
+  info: <p>Consultants sometimes manage relationships with external suppliers and service providers.</p><p>They negotiate contracts, establish clear expectations, and oversee vendor performance.</p><p>This coordination ensures that outsourced components of a project are delivered on time, within budget, and to the required quality standards.</p>
 
 - ID: B.28
-  name: Used agile methodologies for iterative development and adaptive planning
-  info: Consultants implement Agile frameworks like Scrum or Kanban to manage projects flexibly. They facilitate short development cycles, encourage frequent client feedback, and adapt plans based on evolving requirements. This approach allows for rapid delivery of value and better alignment with client needs throughout the project.
+  name: Use agile methodologies for iterative development and adaptive planning
+  info: <p>Consultants often use Agile frameworks like Scrum or Kanban to manage projects flexibly.</p><p>These facilitate short development cycles, encourage frequent client feedback, and enable plans to adapt based on evolving requirements.</p><p>This approach allows for rapid delivery of value and better alignment with client needs throughout the project.</p>
 
 - ID: B.29
-  name: Used waterfall methodologies for managing delivery of a project's products
-  info: Consultants apply traditional, sequential project management approaches for projects with well-defined scopes and requirements. They create detailed plans, establish clear milestones, and manage each phase systematically. This structured approach ensures thorough documentation and is suitable for projects with stable requirements.
+  name: Use waterfall methodologies for managing delivery of a project's products
+  info: <p>Consultants sometimes apply traditional, sequential project management approaches for projects with well-defined scopes and requirements.</p><p>They create detailed plans, establish clear milestones, and manage each phase systematically.</p><p>This structured approach ensures thorough documentation and is suitable for projects with stable requirements.</p>
 
 - ID: B.30
-  name: Managed risks within a project
-  info: Consultants identify, assess, and mitigate potential threats to project success. They create risk registers, develop contingency plans, and continuously monitor risk factors throughout the project lifecycle. This proactive risk management helps minimize disruptions and increases the likelihood of project success.
-
-- ID: B.31
-  name: Created project documentation such as project plans, initiation documents and status reports
-  info: Consultants develop comprehensive project artifacts to guide execution and keep stakeholders informed. They create detailed project plans, charter documents, and regular status updates. This documentation ensures clear communication of project objectives, progress, and expectations throughout the engagement.
+  name: Create and maintain project documentation
+  info: <p>Consultants develop comprehensive project artifacts to guide execution and keep stakeholders informed.</p><p>They create detailed project plans, intiation documents, risk registers, and regular status updates.</p><p>This documentation ensures clear communication of project objectives, progress, and expectations throughout the engagement.</p>
 ---
