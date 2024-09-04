@@ -103,17 +103,21 @@ $("button#start").on('click', function() {
     //$("div#assessmentSlider").submit(function(){
     //event.preventDefault();
     //console.log('Y');
-
+      $('#summaryTable').empty();
     formData = $('div#assessmentSlider :input').serializeArray(); // put form data into array
-    //console.log(formData);
+      //console.log(formData);
+    
+    
+    
 
     var compGroups = []; // Setup array to hold competence names and total scores
 
     $(formData).each(function(i, field) { //iterate through the formdata
+      $('#summaryTable').append("<tr><td>" + field.name + "</td><td>" + field.value + "</td></tr>");
       var compItemID = field.name;
       var compID = compItemID.substr(0, compItemID.indexOf('_')); // find the compID by parsing before the _
 
-      // console.log(compID);
+      console.log(compID, compItemID);
 
       compGroups.push(compID); // Create an array of all the skill groups by adding each one in turn
     });
