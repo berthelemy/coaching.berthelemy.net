@@ -1,7 +1,12 @@
 var imageURL = '';
 
+ 
 
 $(document).ready(function() {
+
+ 
+
+  // BX Slider - for diagnotic
   var slider = $('.assessmentSlider').bxSlider({
     touchEnabled: false,
     pager: true,
@@ -98,6 +103,7 @@ $("button#start").on('click', function() {
     //$("div#assessmentSlider").submit(function(){
     //event.preventDefault();
     //console.log('Y');
+
     formData = $('div#assessmentSlider :input').serializeArray(); // put form data into array
     //console.log(formData);
 

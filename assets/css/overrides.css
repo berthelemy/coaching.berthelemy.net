@@ -1,3 +1,7 @@
+a {
+  color: #3e4e88;
+}
+
 .hide {
     display:none;
 }
@@ -8,6 +12,9 @@
     float: right;
 }
 
+.bx-wrapper {
+  padding: 1rem;
+}
 
 div.assessmentSlider input[type="radio"]{
    appearance: none;
@@ -20,7 +27,7 @@ div.assessmentSlider input[type="radio"]{
    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-div.assessmentSlider input[type="radio"]:checked {
+div.assessmentSlider input[type="radio"]:checked { /* not used */
   appearance: none;
   outline: none;
   padding: 0;
@@ -28,11 +35,43 @@ div.assessmentSlider input[type="radio"]:checked {
   border: none;
 }
 
-div.assessmentSlider input[type="radio"]:checked::before{
+div.assessmentSlider input[type="radio"]:checked::before{ /* not used */
   position: absolute;
   color: green !important;
   content: "\00A0\2713\00A0" !important;
   border: 1px solid #d3d3d3;
   font-weight: bolder;
   font-size: 21px;
+}
+
+div.assessmentSlider input[type="radio"] {
+  display: none;
+}
+
+div#radio-buttons {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+div.assessmentSlider label {
+  cursor:pointer;
+  width: 100%;
+  padding: 0.5rem;
+  height: 5rem;
+ /* float:left;
+  font-size: 1rem;
+  
+  margin: 1rem;
+  width: 5rem; */ 
+  border: 0.1rem solid #3e4e88; 
+}
+
+div.assessmentSlider input[type="radio"]:checked+label {
+  background-color: #3e4e88;
+  color: #eee;
+}
+
+.btn-primary {
+  background-color: #3e4e88;
+  border-color: #3e4e88;
 }

@@ -3,9 +3,27 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>{{ site.title }}</title>
+  <title>{{ page.title }} | {{ site.title }}</title>
   <meta name="description" content="{{ site.description }}">
-  <meta name="author" content="Wyver Solutions Ltd">
+  <meta name="author" content="Mark Berthelemy">
+
+<!-- Open Graph Meta Tags -->
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{ page.title }} | {{ site.title }}">
+<meta property="og:description" content="{{ site.description }}">
+<meta property="og:image" content="/assets/images/business-8458539_640.jpg">
+<meta property="og:image:width" content="640">
+<meta property="og:image:height" content="432">
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta property="twitter:domain" content="{{ site.url }}">
+<meta property="twitter:url" content="{{ site.url }}{{ page.url }}">
+<meta name="twitter:title" content="{{ page.title }} | {{ site.title }}">
+<meta name="twitter:description" content="{{ site.description }}">
+<meta name="twitter:image" content="/assets/images/business-8458539_640.jpg">
+
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -20,7 +38,6 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
 
-  <link href="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.css" type="text/css" rel="stylesheet" />
 
   <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css" >
   <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.5/css/responsive.dataTables.min.css">
@@ -38,5 +55,7 @@
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="{{ 'assets/skeleton/images/favicon.png' | relative_url }}">
+
+  <script src="https://kit.fontawesome.com/22cfb82c4b.js" crossorigin="anonymous"></script>
 
 </head>
