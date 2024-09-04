@@ -3,7 +3,7 @@
 title: Projects and programme management
 ID: Projects
 description: You are likely to be the person asked to design a solution that will meet your customer's needs - based on a strong theoretical and practical background.
-
+items:
 - ID: B.26
   name: Managed project resources
   info: Consultants oversee the allocation and utilization of human, financial, and material resources throughout a project's lifecycle. They create resource plans, monitor usage, and make adjustments to ensure optimal efficiency. This involves balancing competing demands, prioritizing tasks, and maximizing resource effectiveness to meet project goals.
@@ -27,4 +27,4 @@ description: You are likely to be the person asked to design a solution that wil
 - ID: B.31
   name: Created project documentation such as project plans, initiation documents and status reports
   info: Consultants develop comprehensive project artifacts to guide execution and keep stakeholders informed. They create detailed project plans, charter documents, and regular status updates. This documentation ensures clear communication of project objectives, progress, and expectations throughout the engagement.
-  ---
+---

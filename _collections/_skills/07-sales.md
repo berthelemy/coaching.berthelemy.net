@@ -1,9 +1,8 @@
 ---
-
 title: Sales and marketing
 ID: Sales
 description: You are likely to be the person asked to design a solution that will meet your customer's needs - based on a strong theoretical and practical background.
-
+items:
 - ID: S.32
   name: Written successful sales proposals
   info: Consultants craft compelling proposals that articulate the value of their services to potential clients. They tailor each proposal to address specific client needs, highlight their expertise, and outline clear deliverables and expected outcomes. These well-structured documents help win new business and set the foundation for successful engagements.
@@ -23,4 +22,4 @@ description: You are likely to be the person asked to design a solution that wil
 - ID: S.36
   name: Developed propositions designed to meet a client's needs
   info: Consultants create tailored solutions that address specific client challenges and objectives. They combine industry knowledge, analytical skills, and creativity to develop unique propositions that deliver value. These customized approaches demonstrate the consultant's understanding of the client's business and increase the likelihood of engagement success.
-  ---
+---

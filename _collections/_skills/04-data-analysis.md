@@ -3,7 +3,7 @@
 title: Data analysis
 ID: Data analysis
 description: You are likely to be the person asked to design a solution that will meet your customer's needs - based on a strong theoretical and practical background.
-
+items:
 - ID: D.16
   name: Examined data sets to draw conclusions, develop reports, and identify key insights to improve business performance
   info: Consultants analyze large volumes of data to uncover trends, patterns, and actionable insights. They use statistical techniques and data visualization tools to interpret complex information and translate it into clear, impactful reports that guide strategic decision-making and drive business improvements.
@@ -24,4 +24,4 @@ description: You are likely to be the person asked to design a solution that wil
   name: Extracted and transformed data using tools like SQL and Python to prepare it for analysis
   info: Consultants use programming languages and database tools to extract, clean, and manipulate large datasets. They write queries and scripts to merge data from various sources, perform data transformations, and create structured datasets ready for analysis, enabling more efficient and accurate insights generation.
 
-  ---
+---

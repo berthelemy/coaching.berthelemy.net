@@ -3,7 +3,7 @@
 title: Tools
 ID: Tools
 description: You are likely to be the person asked to design a solution that will meet your customer's needs - based on a strong theoretical and practical background.
-
+items:
 - ID: T.37
   name: Created and used visual aids to simplify complex information
   info: Consultants design infographics, diagrams, and other visual representations to make complex data and concepts more accessible. They use these visual aids in presentations, reports, and workshops to enhance understanding and retention of key information. This skill helps clients grasp intricate ideas quickly and make informed decisions.
@@ -23,4 +23,4 @@ description: You are likely to be the person asked to design a solution that wil
 - ID: T.41
   name: Conducted exercises to identify the root causes of issues within an organisation
   info: Consultants facilitate structured problem-solving sessions to uncover underlying causes of organizational challenges. They use techniques like the "5 Whys" or fishbone diagrams to dig deep into issues. This approach helps clients address fundamental problems rather than symptoms, leading to more effective and sustainable solutions.
-  ---
+---
