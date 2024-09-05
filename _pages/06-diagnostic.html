@@ -3,7 +3,10 @@ layout: default
 title: Diagnostic
 permalink: diagnostic
 ---
+<script src="/assets/js/skills.js"></script>
+
 {% assign skills = site.skills %}
+
 
 
 <script>var skillGroups = [];</script>
@@ -22,6 +25,7 @@ permalink: diagnostic
 
     {% for c in skills %}
      {% for item in c.items %}
+
 
     <div class="row"><!-- New row for each question -->
       <script>skillGroups.push(["{{ c.title }}","{{ c.ID }}_{{ item.ID }}",0]);</script>
@@ -114,15 +118,13 @@ permalink: diagnostic
       <div class="modal-body">
         <canvas id="radarChart"></canvas>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <a type="button" id="downloadChart" class="btn btn-secondary" download="skill-assessment">Download summary</a>
-        <a type="button" href="https://cal.com/markberthelemy" target="_blank" class="btn btn-primary">Book a call to talk this through</a>
-      </div>
-      <div><!-- List of skills-->
-        <table>
+      
+      <div class="container"><!-- List of skills-->
+        <h2>Your data</h2>
+        <p>Please check that you have completed everything that you need to.</p>
+        <table class="table">
           <thead>
-            
+            <th>Category</th>
             <th>Skill</th>
             <th>Level</th>
             
@@ -132,6 +134,11 @@ permalink: diagnostic
 
       </table>
       </div><!-- End of list of skills -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <a type="button" id="downloadChart" class="btn btn-secondary" download="skill-assessment">Download summary</a>
+        <a type="button" href="https://cal.com/markberthelemy" target="_blank" class="btn btn-primary">Book a call to talk this through</a>
+      </div>
     </div>
   </div>
 

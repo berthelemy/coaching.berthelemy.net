@@ -109,15 +109,38 @@ $("button#start").on('click', function() {
     
     
     
-
+    var levels = ["Not relevant", "Beginner", "Novice", "Experienced", "Expert"]; // Setup levels array
     var compGroups = []; // Setup array to hold competence names and total scores
+    
+    
+    //console.log(skills);
+    //console.log(formData[0].value);
+    //formData.forEach(function(item){  // Test formData contents
+    //  console.log("name = "+item.name);
+    //})
+    skills.forEach(function(item) { // loop through list of skills
+      //console.log(item.Category, item.SkillID, item.Name);
+      //console.log("Skill ID = "+ item.SkillID);
+      let index = formData.findIndex(x => x.name === item.SkillID );
+      if(index != -1) {
+        levelText = levels[formData[index].value];
+      } else {
+        levelText = " ";
+      }
 
-    $(formData).each(function(i, field) { //iterate through the formdata
-      $('#summaryTable').append("<tr><td>" + field.name + "</td><td>" + field.value + "</td></tr>");
+      $('#summaryTable').append("<tr><td>" + item.Category + "</td><td>" + item.Name + "</td><td>" + levelText + "</td></tr>"); // create summary table content
+      //console.log(index);
+  });
+    
+  
+
+    $(formData).each(function(i, field) { //iterate through the formdata to create data for radar chart
+ 
+      
       var compItemID = field.name;
       var compID = compItemID.substr(0, compItemID.indexOf('_')); // find the compID by parsing before the _
 
-      console.log(compID, compItemID);
+      //console.log(compID, compItemID);
 
       compGroups.push(compID); // Create an array of all the skill groups by adding each one in turn
     });
@@ -176,7 +199,7 @@ $("button#start").on('click', function() {
       scores.push(value.score / value.count);
 
     });
-    console.log(compGroupScores);
+    //console.log(compGroupScores);
 
     radar(labels, scores);
 
