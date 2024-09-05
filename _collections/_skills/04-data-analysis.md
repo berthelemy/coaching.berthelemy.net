@@ -2,7 +2,7 @@
 
 title: Data analysis
 ID: Data analysis
-description: You are likely to be the person asked to design a solution that will meet your customer's needs - based on a strong theoretical and practical background.
+description: Analysing, modelling and presenting data to help organisations make effective decisions.
 items:
 - ID: D.16
   name: Examine data sets

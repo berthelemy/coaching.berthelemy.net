@@ -2,7 +2,7 @@
 
 title: Projects and programme management
 ID: Projects
-description: You are likely to be the person asked to design a solution that will meet your customer's needs - based on a strong theoretical and practical background.
+description: Initiating and running projects to meet organisational needs, within budget, time and quality constraints.
 items:
 - ID: B.26
   name: Manage project resources

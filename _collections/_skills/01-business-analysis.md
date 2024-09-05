@@ -1,7 +1,7 @@
 ---
 title: Business analysis
 ID: Business analysis
-description: As a consultant, you will often need to understand how organisations work, and propose and document improvements.
+description: Analysing, modeling and improving the processes and systems within an organisation.
 items:
 - ID: B.01
   name: Model existing and new business processes

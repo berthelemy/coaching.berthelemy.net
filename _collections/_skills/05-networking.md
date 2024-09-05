@@ -2,7 +2,7 @@
 
 title: Networking
 ID: Networking
-description: You are likely to be the person asked to design a solution that will meet your customer's needs - based on a strong theoretical and practical background.
+description: Building strong, effective connections within and across organisational and domain boundaries.
 items:
 - ID: N.21
   name: Build strong professional relationships across organisational and domain boundaries

@@ -1,7 +1,7 @@
 ---
 title: Communication
 ID: Communication
-description: You are likely to be the person asked to design a solution that will meet your customer's needs - based on a strong theoretical and practical background.
+description: Ensuring you hear and understand your clients, whilst getting your own message across clearly.
 items:
 - ID: C.11
   name: Adapt your verbal language and style to suit diverse audiences

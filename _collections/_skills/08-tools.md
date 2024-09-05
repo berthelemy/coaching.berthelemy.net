@@ -2,7 +2,7 @@
 
 title: Tools
 ID: Tools
-description: You are likely to be the person asked to design a solution that will meet your customer's needs - based on a strong theoretical and practical background.
+description: Finding and using the right tools for your consulting practice. 
 items:
 - ID: T.37
   name: Create and use visual aids to simplify complex information

@@ -1,7 +1,7 @@
 ---
 title: Business and financial management
 ID: Business management
-description: You are likely to be the person asked to design a solution that will meet your customer's needs - based on a strong theoretical and practical background.
+description: The skills needed to run a small consulting business, or projects or business units within a larger organisation.
 items:
 - ID: BM.06
   name: Write a business plan or business case

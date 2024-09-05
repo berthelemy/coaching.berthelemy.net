@@ -1,7 +1,7 @@
 ---
 title: Sales and marketing
 ID: Sales
-description: You are likely to be the person asked to design a solution that will meet your customer's needs - based on a strong theoretical and practical background.
+description: Selling your own services, and those of your customers through long term relationships and clear messaging.
 items:
 - ID: S.32
   name: Write successful sales proposals
