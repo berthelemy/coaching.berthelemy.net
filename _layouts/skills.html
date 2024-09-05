@@ -3,36 +3,29 @@ layout: default
 ---
 <p>{{ page.description }}</p>
 
-{% assign skills = site.skills | sort: "category" %}
+{% assign skills = site.skills | sort: "title" %}
 {% for c in skills %}
 <div class="row">
   <div class="col-12">
   <h2>{{ c.title }}</h2>
+  <p class="lead">{{ c.description }}</p>
   </div>
-  </div>
-  <div class="row">
+</div>
   {% for item in c.items %}
-
-
-
+<div class="row">
       <div class="col-md-3">
-
-        <h3>{{ item.name }}</h3>
+        <strong>{{ item.name }}</strong>
       </div>
-      <div class="col-md-3">
-        <h4>Level 1</h4>
-        <p>{{ item.L1 }}</p>
+      <div class="col-md-9">
+        {{ item.info }}
       </div>
-      <div class="col-md-3">
-        <h4>Level 2</h4>
-        <p>{{ item.L2 }}</p>
-      </div>
-      <div class="col-md-3">
-        <h4>Level 3</h4>
-        <p>{{ item.L3 }}</p>
-      </div>
+      
+ </div>
+ 
 
 
     {% endfor %}
-    </div>
+    <hr>
 {% endfor %}
+
+{{ content }}

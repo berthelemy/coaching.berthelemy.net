@@ -1,13 +1,13 @@
 {% assign skills = site.skills | sort: "category" %}
+<div class="row">
 {% for c in skills %}
 
-  <div class="row">
-    <div class="col-3">
-      <p><strong><a href="{{ site.baseurl }}{{ c.url}}">{{ c.title }}</a></strong></p>
-    </div>
-    <div class="col-9">
-      <p>{{ c.description }}</p>
-    </div>
-  </div>
+  
+<div class="col-lg-4">
+  <h2><a href="{{ site.baseurl }}{{ c.url}}">{{ c.title }}</a></h2>
+  <p>{{ c.description }}</p>
+</div>
+  
 
 {% endfor %}
+</div>
