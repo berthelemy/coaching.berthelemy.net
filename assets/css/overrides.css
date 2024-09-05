@@ -2,6 +2,23 @@ a {
   color: #3e4e88;
 }
 
+#main a, footer a {
+  text-decoration: underline;
+}
+
+#main a.btn, #main h2 a {
+  text-decoration: none;
+}
+
+#main a:hover, footer a:hover {
+  text-decoration: none;
+  color: #0e1e58;
+}
+
+#main a.btn:hover {
+  color: #fff;
+}
+
 .hide {
     display:none;
 }

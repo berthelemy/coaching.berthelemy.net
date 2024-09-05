@@ -1,11 +1,12 @@
-{% assign skills = site.skills | sort: "category" %}
+{% assign skills = site.skills | sort: "title" %}
 <div class="row">
+  {% assign counter = 0 %}
 {% for c in skills %}
-
+{% capture counter %}{{ counter | plus:1 }}{% endcapture %}
   
 <div class="col-lg-4">
 
-    <h2><a href="{{ site.baseurl }}{{ c.url}}">{{ c.title }}</a></h2>
+    <h2><a href="{{ site.baseurl }}{{ c.url}}">{{ counter }} - {{ c.title }}</a></h2>
 
  
       <p>{{ c.description }}</p>
