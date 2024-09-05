@@ -13,10 +13,10 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Mark Berthelemy - coaching
+title: Mark Berthelemy - Coaching
 organisation: Mark Berthelemy
 orgurl: https://mark.berthelemy.net
-url: https://consultants.berthelemy.net
+url: https://coaching.berthelemy.net
 
 email: mark@berthelemy.net
 description: Supporting consultants with a skills framework, bespoke conversations and challenges.
