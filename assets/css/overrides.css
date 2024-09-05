@@ -6,10 +6,23 @@ a {
     display:none;
 }
 
+.chartContainer {
+  display: grid;
+}
+
+.chartContainer img, .chartContainer canvas {
+  grid-column: 1;
+  grid-row: 1;
+}
+
 .info-button {
     height: 2rem;
     width: 2rem;
     float: right;
+}
+
+canvas#radarChart {
+  display:block;
 }
 
 .bx-wrapper {

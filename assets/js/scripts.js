@@ -1,5 +1,6 @@
 var imageURL = '';
 
+
  
 
 $(document).ready(function() {
@@ -28,6 +29,10 @@ $("input[type='radio']").on('change', function() {
         slider.goToNextSlide();
         return false;
     });
+
+$("a#printSummary").on('click', function() {
+    $(".modal-content").print();
+});
 
 $("button#previous").on('click', function() {
   slider.goToPrevSlide();
@@ -235,7 +240,7 @@ function radar(labels, scores) {
       animation: {
         onComplete: function(animation) {
           document.querySelector('a#downloadChart').setAttribute('href', this.toBase64Image());
-
+          document.querySelector('img#radarChartImage').setAttribute('src', this.toBase64Image());
         }
       },
       legend: {

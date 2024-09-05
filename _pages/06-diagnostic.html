@@ -5,6 +5,7 @@ permalink: diagnostic
 ---
 <script src="/assets/js/skills.js"></script>
 
+
 {% assign skills = site.skills %}
 
 
@@ -114,9 +115,19 @@ permalink: diagnostic
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
+        
       </div>
       <div class="modal-body">
-        <canvas id="radarChart"></canvas>
+        <div class="text-center">
+          <!--<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
+          <a type="button" id="downloadChart" class="btn btn-secondary m-1" download="skill-assessment">Download chart</a>
+          <a type="button" id="printSummary" class="btn btn-secondary m-1" href="#">Print summary</a>
+          <a type="button" href="https://cal.com/markberthelemy" target="_blank" class="btn btn-primary m-1">Talk to a coach</a>
+        </div>
+        <div class="chartContainer">
+          <img id = "radarChartImage" class="img-fluid" src="#" alt="Radar chart">
+          <canvas id="radarChart"></canvas>
+        </div>
       </div>
       
       <div class="container"><!-- List of skills-->
@@ -135,9 +146,7 @@ permalink: diagnostic
       </table>
       </div><!-- End of list of skills -->
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <a type="button" id="downloadChart" class="btn btn-secondary" download="skill-assessment">Download summary</a>
-        <a type="button" href="https://cal.com/markberthelemy" target="_blank" class="btn btn-primary">Book a call to talk this through</a>
+        
       </div>
     </div>
   </div>
